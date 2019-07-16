@@ -16,7 +16,7 @@ body {
 }
 
 a {
-  color: #eee;
+  color: #fff;
   transition: 0.5s;
 }
 
@@ -471,7 +471,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #intro {
   width: 100%;
-  height: 150vh;
+  height: 100vh;
   /* position: absolute; */
   left: auto;
   background: url(../img/intro-bg.jpg) top center;
@@ -492,7 +492,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   top: 0;
   left: 0;
   right: 0;
-  height: 150vh;
+  height: 170vh;
 
 }
 
@@ -527,21 +527,22 @@ body.mobile-nav-active #mobile-nav-toggle {
   text-align: justify;
   text-transform: uppercase;
   align-self: self-end;
-  margin: 55px 90px;
+  margin: 55px 0px;
 }
 
 #intro h1 span {
   color: #f82249;
 }
-
 #intro p {
   text-align: justify;
   color: #FF9461;
-  font-weight: 700;
-  font-size: 20px;
+  /* font-weight: 700; */
+  font-size: 14px;
   align-self: self-end;
-  margin: 10px 94px 51px 89px;
+  margin: 0px 0px 0px 0px;
 }
+
+
 
 #intro .play-btn {
   width: 94px;
@@ -1135,12 +1136,12 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------------------------------------*/
 
 #supporters {
-  padding: 60px 0;
+  padding: 0px 0;
 }
 
 #supporters .supporters-wrap {
-  border-top: 1px solid #e0e5fa;
-  border-left: 1px solid #e0e5fa;
+  /* border-top: 1px solid #e0e5fa;
+  border-left: 1px solid #e0e5fa; */
   margin-bottom: 30px;
 }
 
@@ -1176,7 +1177,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------------------------------------*/
 
 #faq {
-  padding: 60px 0;
+  padding: 0px 0;
 }
 
 #faq #faq-list {
@@ -1185,7 +1186,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #faq #faq-list li {
-  border-bottom: 1px solid #ddd;
+  /* border-bottom: 1px solid #ddd; */
 }
 
 #faq #faq-list a {
@@ -1338,7 +1339,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #buy-tickets .card .btn {
   font-size: 15px;
   border-radius: 50px;
-  padding: 10px 40px;
+  padding: 10px 60px;
   transition: all 0.2s;
   background-color: #f82249;
   border: 0;
