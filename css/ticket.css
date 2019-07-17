@@ -137,7 +137,7 @@ h6 {
 }
 
 .section-with-bg {
-  background-color: #BF60F7;
+  background-color: #f6f7fd;
 }
 
 /*--------------------------------------------------------------
@@ -375,7 +375,7 @@ h6 {
 }
 
 #mobile-nav-toggle i {
-  color: #FF9461;
+  color: #fff;
 }
 
 /* Mobile Nav Styling */
@@ -673,17 +673,17 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------------------------------------*/
 
 #about {
-  background: url("../img/intro-bg.jpg");
+  background: url("../img/about-bg.jpg");
   background-size: cover;
   overflow: hidden;
   position: relative;
   color: #fff;
-  padding: 200px 0 0px 0;
+  padding: 60px 0 40px 0;
 }
 
 #about:before {
   content: "";
-  background: rgba(192, 96, 247, 0.425);
+  background: rgba(13, 20, 41, 0.8);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -1024,8 +1024,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #hotels .hotel {
-  /* border: 1px solid #e0e5fa; */
-  /* background: #fff; */
+  border: 1px solid #e0e5fa;
+  background: #fff;
   margin-bottom: 30px;
 }
 
@@ -1036,7 +1036,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #hotels .hotel-img {
   overflow: hidden;
-  /* margin-bottom: 15px; */
+  margin-bottom: 15px;
 }
 
 #hotels .hotel-img img {
@@ -1307,16 +1307,15 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #buy-tickets .card .card-title {
-  margin: 50px 0;
-  font-size: 16px;
-  font-style: unset;
+  margin: 10px 0;
+  font-size: 14px;
   letter-spacing: 1px;
-  /* font-weight: bold; */
+  font-weight: bold;
 }
 
 #buy-tickets .card .card-price {
-  font-size: 30px;
-  margin: 35px;
+  font-size: 48px;
+  margin: 0;
 }
 
 #buy-tickets .card ul li {
@@ -2056,9 +2055,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   #footer {
     background-attachment: fixed;
   }
-  #hotels {
-    margin-top: -150px;
-}
 }
 
 @media (max-width: 1199px) {
@@ -2069,14 +2065,11 @@ body.mobile-nav-active #mobile-nav-toggle {
   .nav-menu a {
     padding: 8px 4px;
   }
-  #hotels {
-    margin-top: -50px;
-}
 }
 
 @media (max-width: 991px) {
   #header {
-    background: #ffffffd5;
+    background: rgba(6, 12, 34, 0.98);
     height: 70px;
     padding: 15px 0;
     transition: all 0.5s;
@@ -2087,7 +2080,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
 
   #mobile-nav-toggle {
-    display: inline-block;
+    display: inline;
   }
 
   #intro .intro-container {

@@ -137,7 +137,7 @@ h6 {
 }
 
 .section-with-bg {
-  background-color: #f6f7fd;
+  background-color: #BF60F7;
 }
 
 /*--------------------------------------------------------------
@@ -375,7 +375,7 @@ h6 {
 }
 
 #mobile-nav-toggle i {
-  color: #fff;
+  color: #FF9461;
 }
 
 /* Mobile Nav Styling */
@@ -673,17 +673,17 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------------------------------------*/
 
 #about {
-  background: url("../img/about-bg.jpg");
+  background: url("../img/intro-bg.jpg");
   background-size: cover;
   overflow: hidden;
   position: relative;
   color: #fff;
-  padding: 60px 0 40px 0;
+  padding: 200px 0 0px 0;
 }
 
 #about:before {
   content: "";
-  background: rgba(13, 20, 41, 0.8);
+  background: rgba(192, 96, 247, 0.425);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -1024,8 +1024,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #hotels .hotel {
-  border: 1px solid #e0e5fa;
-  background: #fff;
+  /* border: 1px solid #e0e5fa; */
+  /* background: #fff; */
   margin-bottom: 30px;
 }
 
@@ -1036,7 +1036,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #hotels .hotel-img {
   overflow: hidden;
-  margin-bottom: 15px;
+  /* margin-bottom: 15px; */
 }
 
 #hotels .hotel-img img {
@@ -1307,15 +1307,16 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #buy-tickets .card .card-title {
-  margin: 10px 0;
-  font-size: 14px;
+  margin: 50px 0;
+  font-size: 16px;
+  font-style: unset;
   letter-spacing: 1px;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 
 #buy-tickets .card .card-price {
-  font-size: 48px;
-  margin: 0;
+  font-size: 30px;
+  margin: 35px;
 }
 
 #buy-tickets .card ul li {
@@ -1994,7 +1995,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .overlay .closebtn {
   position: absolute;
-  top: -35px;
+  top: 30px;
   right: 45px;
   font-size: 60px;
 }
@@ -2055,6 +2056,9 @@ body.mobile-nav-active #mobile-nav-toggle {
   #footer {
     background-attachment: fixed;
   }
+  #hotels {
+    margin-top: -150px;
+}
 }
 
 @media (max-width: 1199px) {
@@ -2065,11 +2069,14 @@ body.mobile-nav-active #mobile-nav-toggle {
   .nav-menu a {
     padding: 8px 4px;
   }
+  #hotels {
+    margin-top: -50px;
+}
 }
 
 @media (max-width: 991px) {
   #header {
-    background: rgba(6, 12, 34, 0.98);
+    background: #ffffffd5;
     height: 70px;
     padding: 15px 0;
     transition: all 0.5s;
@@ -2080,7 +2087,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
 
   #mobile-nav-toggle {
-    display: inline;
+    display: inline-block;
   }
 
   #intro .intro-container {
