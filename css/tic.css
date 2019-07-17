@@ -16,14 +16,14 @@ body {
 }
 
 a {
-  color: #f82249;
+  color: #fff;
   transition: 0.5s;
 }
 
 a:hover,
 a:active,
 a:focus {
-  color: #f8234a;
+  color: #fb9557;
   outline: none;
   text-decoration: none;
 }
@@ -137,7 +137,7 @@ h6 {
 }
 
 .section-with-bg {
-  background-color: #f6f7fd;
+  background-color: #BF60F7;
 }
 
 /*--------------------------------------------------------------
@@ -157,7 +157,7 @@ h6 {
 
 #header.header-scrolled,
 #header.header-fixed {
-  background: rgba(6, 12, 34, 0.98);
+  background: #ffffffd5;
   height: 70px;
   padding: 15px 0;
   transition: all 0.5s;
@@ -271,10 +271,13 @@ h6 {
   font-size: 14px;
   outline: none;
 }
-
+.navbar-top{
+  background: #040919;
+  padding: 60px 0 30px 0;
+}
 .nav-menu .menu-active a,
 .nav-menu a:hover {
-  color: #fff;
+  color: #FF595E;
 }
 
 .nav-menu > li {
@@ -372,7 +375,7 @@ h6 {
 }
 
 #mobile-nav-toggle i {
-  color: #fff;
+  color: #FF9461;
 }
 
 /* Mobile Nav Styling */
@@ -469,27 +472,35 @@ body.mobile-nav-active #mobile-nav-toggle {
 #intro {
   width: 100%;
   height: 100vh;
+  /* position: absolute; */
+  left: auto;
   background: url(../img/intro-bg.jpg) top center;
   background-size: cover;
   overflow: hidden;
-  position: relative;
+  /* position: relative; */
 }
 
+.no-gutters {
+  margin-top: 150px;
+  margin-left: 0;
+}
 #intro:before {
   content: "";
-  background: rgba(6, 12, 34, 0.8);
+  background: #bf60f785;
   position: absolute;
   bottom: 0;
   top: 0;
   left: 0;
   right: 0;
+  height: 170vh;
+
 }
 
 #intro .intro-container {
   position: absolute;
   bottom: 0;
   left: 0;
-  top: 90px;
+  top: 0px;
   right: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -509,22 +520,29 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #intro h1 {
-  color: #fff;
+  color: #FF9461;
   font-family: "Raleway", sans-serif;
   font-size: 56px;
   font-weight: 600;
+  text-align: justify;
   text-transform: uppercase;
+  align-self: self-end;
+  margin: 55px 0px;
 }
 
 #intro h1 span {
   color: #f82249;
 }
-
 #intro p {
-  color: #ebebeb;
-  font-weight: 700;
-  font-size: 20px;
+  text-align: justify;
+  color: #FF9461;
+  /* font-weight: 700; */
+  font-size: 14px;
+  align-self: self-end;
+  margin: 0px 0px 0px 0px;
 }
+
+
 
 #intro .play-btn {
   width: 94px;
@@ -607,19 +625,19 @@ body.mobile-nav-active #mobile-nav-toggle {
   letter-spacing: 1px;
   display: inline-block;
   padding: 12px 32px;
-  border-radius: 50px;
   transition: 0.5s;
   line-height: 1;
-  margin: 10px;
-  color: #fff;
+  margin: 10px 80px;;
+  background: #FF9461;
+  color: #3A3F76;
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s;
-  border: 2px solid #f82249;
+  border: 2px solid #FF9461;
 }
 
 #intro .about-btn:hover {
-  background: #f82249;
-  color: #fff;
+  background: #FF9461;
+  color: #3A3F76;
 }
 
 @-webkit-keyframes pulsate-btn {
@@ -655,17 +673,17 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------------------------------------*/
 
 #about {
-  background: url("../img/about-bg.jpg");
+  background: url("../img/intro-bg.jpg");
   background-size: cover;
   overflow: hidden;
   position: relative;
   color: #fff;
-  padding: 60px 0 40px 0;
+  padding: 200px 0 0px 0;
 }
 
 #about:before {
   content: "";
-  background: rgba(13, 20, 41, 0.8);
+  background: rgba(192, 96, 247, 0.425);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -697,14 +715,56 @@ body.mobile-nav-active #mobile-nav-toggle {
 /*--------------------------------------------------------------
 # Speakers Section
 --------------------------------------------------------------*/
+#tickets {
+  padding: 100px 0 100px 0;
+  background-color: #FF9461
+}
+
+#tickets .speaker {
+  position: relative;
+  overflow: hidden;
+  margin-top: -150px;
+  margin-bottom: 30px;
+}
+
+#tickets .speaker .details {
+  background: rgba(6, 12, 34, 0.76);
+  position: absolute;
+  left: 0;
+  bottom: -30px;
+  right: 0;
+  text-align: center;
+  padding-top: 10px;
+  transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+#tickets .speaker .details h3 {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+#tickets .speaker .details p {
+  color: #fff;
+  font-size: 15px;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+/*--------------------------------------------------------------
+# Speakers Section
+--------------------------------------------------------------*/
 
 #speakers {
-  padding: 60px 0 30px 0;
+  padding: 60px 0 100px 0;
+  background-color: #BF60F7
 }
 
 #speakers .speaker {
   position: relative;
   overflow: hidden;
+  margin-top: -150px;
   margin-bottom: 30px;
 }
 
@@ -964,8 +1024,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #hotels .hotel {
-  border: 1px solid #e0e5fa;
-  background: #fff;
+  /* border: 1px solid #e0e5fa; */
+  /* background: #fff; */
   margin-bottom: 30px;
 }
 
@@ -976,7 +1036,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #hotels .hotel-img {
   overflow: hidden;
-  margin-bottom: 15px;
+  /* margin-bottom: 15px; */
 }
 
 #hotels .hotel-img img {
@@ -1066,12 +1126,12 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------------------------------------*/
 
 #supporters {
-  padding: 60px 0;
+  padding: 0px 0;
 }
 
 #supporters .supporters-wrap {
-  border-top: 1px solid #e0e5fa;
-  border-left: 1px solid #e0e5fa;
+  /* border-top: 1px solid #e0e5fa;
+  border-left: 1px solid #e0e5fa; */
   margin-bottom: 30px;
 }
 
@@ -1107,7 +1167,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------------------------------------*/
 
 #faq {
-  padding: 60px 0;
+  padding: 0px 0;
 }
 
 #faq #faq-list {
@@ -1116,7 +1176,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #faq #faq-list li {
-  border-bottom: 1px solid #ddd;
+  /* border-bottom: 1px solid #ddd; */
 }
 
 #faq #faq-list a {
@@ -1164,7 +1224,11 @@ body.mobile-nav-active #mobile-nav-toggle {
   overflow: hidden;
   position: relative;
 }
-
+.contact-subscribe {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
 #subscribe:before {
   content: "";
   background: rgba(6, 12, 34, 0.6);
@@ -1214,7 +1278,19 @@ body.mobile-nav-active #mobile-nav-toggle {
 #buy-tickets {
   padding: 60px 0;
 }
-
+.card {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #FF9461;
+  background-clip: border-box;
+  border: 1px solid rgba(0,0,0,.125);
+  /* border-radius: .75rem; */
+}
 #buy-tickets .card {
   border: none;
   border-radius: 5px;
@@ -1231,15 +1307,16 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #buy-tickets .card .card-title {
-  margin: 10px 0;
-  font-size: 14px;
+  margin: 50px 0;
+  font-size: 16px;
+  font-style: unset;
   letter-spacing: 1px;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 
 #buy-tickets .card .card-price {
-  font-size: 48px;
-  margin: 0;
+  font-size: 30px;
+  margin: 35px;
 }
 
 #buy-tickets .card ul li {
@@ -1253,7 +1330,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #buy-tickets .card .btn {
   font-size: 15px;
   border-radius: 50px;
-  padding: 10px 40px;
+  padding: 10px 60px;
   transition: all 0.2s;
   background-color: #f82249;
   border: 0;
@@ -1388,7 +1465,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 /*--------------------------------------------------------------
-# Footer
+# Footer Orignal
 --------------------------------------------------------------*/
 
 #footer {
@@ -1431,22 +1508,22 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #footer .footer-top .social-links a {
-  font-size: 18px;
+  font-size: 30px;
   display: inline-block;
-  background: #222636;
-  color: #eee;
+  background: #FF9461;
+  color: rgb(14, 12, 12);
   line-height: 1;
   padding: 8px 0;
   margin-right: 4px;
   border-radius: 50%;
   text-align: center;
-  width: 36px;
-  height: 36px;
+  width: 45px;
+  height: 45px;
   transition: 0.3s;
 }
 
 #footer .footer-top .social-links a:hover {
-  background: #f82249;
+  background: rgb(238, 122, 69);
   color: #fff;
 }
 
@@ -1456,8 +1533,8 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #fff;
   text-transform: uppercase;
   position: relative;
-  padding-bottom: 12px;
-  border-bottom: 2px solid #f82249;
+  /* padding-bottom: 12px; */
+  /* border-bottom: 2px solid #f82249; */
 }
 
 #footer .footer-top .footer-links {
@@ -1536,7 +1613,399 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size: 13px;
   color: #ddd;
 }
+.footer-input-email {
+  display: block;
+  width: 150%;
+  padding: 0.375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: -0.75rem;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.footer-input-btn {
+  background-color: #FF595E;
+  border: none;
+  color: white;
+  padding: 4px 19px 5px 17px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: -6px 0px 0px 237px;
+}
+/*--------------------------------------------------------------
+# Navbar 
+--------------------------------------------------------------*/
 
+#navbar {
+  background: #442d4b;
+  padding: 0 0 25px 0;
+  color: #eee;
+  font-size: 14px;
+}
+
+#navbar .navbar-top {
+  background: #442d4b;
+  padding: 60px 0 30px 0;
+}
+
+#navbar .navbar-top .navbar-info {
+  margin-bottom: 30px;
+}
+
+#navbar .navbar-top .navbar-info h3 {
+  font-size: 26px;
+  margin: 0 0 20px 0;
+  padding: 2px 0 2px 0;
+  line-height: 1;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  color: #fff;
+}
+
+#navbar .navbar-top .navbar-info img {
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+#navbar .navbar-top .navbar-info p {
+  font-size: 25px;
+  /* line-height: 24px; */
+  margin-bottom: 0;
+  font-family: "Raleway", sans-serif;
+  color: #FF595E;
+}
+
+#navbar .navbar-top .social-links a {
+  font-size: 18px;
+  color:#442d4b;
+  display: inline-block;
+  background: #FF595E;
+  /* color: #eee; */
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+
+#navbar .navbar-top .social-links a:hover {
+  background: #442d4b;
+  color: #fff;
+}
+
+#navbar .navbar-top h4 {
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 12px;
+  border-bottom: 2px solid #f82249;
+}
+
+#navbar .navbar-top .navbar-links {
+  margin-bottom: 30px;
+}
+
+#navbar .navbar-top .navbar-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#navbar .navbar-top .navbar-links ul i {
+  padding-right: 5px;
+  color: #f82249;
+  font-size: 18px;
+}
+
+#navbar .navbar-top .navbar-links ul li {
+  border-bottom: 1px solid #262c44;
+  padding: 10px 0;
+}
+
+#navbar .navbar-top .navbar-links ul li:first-child {
+  padding-top: 0;
+}
+
+#navbar .navbar-top .navbar-links ul a {
+  color: #eee;
+}
+
+#navbar .navbar-top .navbar-links ul a:hover {
+  color: #f82249;
+}
+
+#navbar .navbar-top .navbar-contact {
+  margin-bottom: 30px;
+}
+
+#navbar .navbar-top .navbar-contact p {
+  line-height: 26px;
+}
+
+#navbar .navbar-top .navbar-newsletter {
+  margin-bottom: 30px;
+}
+
+#navbar .navbar-top .navbar-newsletter input[type="email"] {
+  border: 0;
+  padding: 6px 8px;
+  width: 65%;
+}
+
+#navbar .navbar-top .navbar-newsletter input[type="submit"] {
+  background: #f82249;
+  border: 0;
+  width: 35%;
+  padding: 6px 0;
+  text-align: center;
+  color: #fff;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+#navbar .navbar-top .navbar-newsletter input[type="submit"]:hover {
+  background: #e0072f;
+}
+
+#navbar .copyright {
+  text-align: center;
+  padding-top: 30px;
+}
+
+#navbar .credits {
+  text-align: center;
+  font-size: 13px;
+  color: #ddd;
+}
+.navbar-input-email {
+  display: block;
+  width: 200%;
+  padding: 0.375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: -0.75rem;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+#navbar .navbar-email a {
+  font-size: 18px;
+  color:#442d4b;
+  display: inline-block;
+  background: #FF595E;
+  /* color: #eee; */
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+.navbar-input-btn {
+  background-color: #FF595E;
+  border: none;
+  color: white;
+  padding: 4px 19px 5px 17px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 3px 0px 0px 130px;
+}
+::-webkit-input-placeholder { /* Edge */
+  color: #FF595E;
+}
+
+:-ms-input-placeholder { /* Internet Explorer */
+  color: #FF595E;
+}
+
+::placeholder {
+  color: #FF595E;
+}
+/*--------------------------------------------------------------
+# Custom Buttons Style
+--------------------------------------------------------------*/
+
+/**************************
+  DEFAULT BOOTSTRAP STYLES
+**************************/
+
+.btn {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 10px 16px;
+}
+  
+.btn-lg {
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 6px;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #428bca;
+  border-color: #357ebd;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+  color: #fff;
+  background-color: #3276b1;
+  border-color: #285e8e;
+}
+
+/***********************
+  Subsribe Input  BUTTONS
+************************/
+.simple-subscription-input {
+  background: #fefefe;
+  color: #f7f3f3;
+  padding: 0.1rem;
+  border-radius: 0;
+  padding: 10px;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #FF9461;
+  opacity: 1; /* Firefox */
+}
+.simple-subscription-form .button {
+  margin-bottom: 0;
+  border-radius: 0 0 0 0;
+}
+.simple-subscription-button {
+  border-radius: inherit;
+  position: absolute;
+  background-color: #FF9461;
+  right: -37px;
+  color: aliceblue;
+  border: none;
+  top: 4px;
+  width: 57px;
+  height: 43px;
+}
+
+/***********************
+  SHARP BUTTONS
+************************/
+.sharp {
+  border-radius:0;
+}
+
+/***********************
+  Custom Button  Values
+************************/
+
+.btn {
+    padding: 14px 24px;
+    border: 0 none;
+    font-weight: 1300;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.btn:focus, .btn:active:focus, .btn.active:focus {
+    outline: 0 none;
+}
+
+.btn-primary {
+    background: #FF9461;
+    color: #3A3F76;
+    margin: 0px 20px;
+}
+.btn-faq {
+    background: #3A3F76;
+    color: #FF9461;
+    margin: 0px 20px;
+    border: none;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+    background: rgb(255, 164, 122);
+    color: rgb(105, 108, 145);
+}
+.btn-primary:active, .btn-primary.active {
+    background: #FF9461;
+    box-shadow: none;
+}
+/*--------------------------------------------------------------
+# Custom Style
+--------------------------------------------------------------*/
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #442D4B;
+  background-color: #442D4B;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #f8595e;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: -35px;
+  right: 45px;
+  font-size: 60px;
+}
+
+.nav-icon {
+  font-size: 30px;
+  cursor: pointer;
+  display: block;
+  text-align: right;
+}
 /*--------------------------------------------------------------
 # Responsive Media Queries
 --------------------------------------------------------------*/
@@ -1544,6 +2013,12 @@ body.mobile-nav-active #mobile-nav-toggle {
 @media (min-width: 767px) {
   #subscribe input {
     min-width: 400px;
+  }
+}
+@media (min-width: 767px) {
+  #footer input {
+    min-width: 200px;
+    min-height: 50px;
   }
 }
 
@@ -1578,6 +2053,12 @@ body.mobile-nav-active #mobile-nav-toggle {
   #subscribe {
     background-attachment: fixed;
   }
+  #footer {
+    background-attachment: fixed;
+  }
+  #hotels {
+    margin-top: -150px;
+}
 }
 
 @media (max-width: 1199px) {
@@ -1588,11 +2069,14 @@ body.mobile-nav-active #mobile-nav-toggle {
   .nav-menu a {
     padding: 8px 4px;
   }
+  #hotels {
+    margin-top: -50px;
+}
 }
 
 @media (max-width: 991px) {
   #header {
-    background: rgba(6, 12, 34, 0.98);
+    background: #ffffffd5;
     height: 70px;
     padding: 15px 0;
     transition: all 0.5s;
@@ -1603,11 +2087,11 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
 
   #mobile-nav-toggle {
-    display: inline;
+    display: inline-block;
   }
 
   #intro .intro-container {
-    top: 70px;
+    top: 0px;
   }
 
   #intro h1 {
@@ -1620,6 +2104,12 @@ body.mobile-nav-active #mobile-nav-toggle {
 
   #schedule .nav-tabs a {
     padding: 8px 60px;
+  }
+  #venue .venue-info h1 {
+    font-size: 94px;
+    letter-spacing: 18px;
+    margin-left:-10px;
+
   }
 }
 
@@ -1641,11 +2131,22 @@ body.mobile-nav-active #mobile-nav-toggle {
   #schedule .nav-tabs a {
     padding: 8px 50px;
   }
+  #venue .venue-info h1 {
+    font-size: 94px;
+    letter-spacing: 18px;
+    margin-left:-10px;
+
+  }
 }
 
 @media (max-width: 574px) {
   #venue .venue-info h3 {
     font-size: 24px;
+  }
+  #venue .venue-info h1 {
+    font-size: 24px;
+    letter-spacing: 15px;
+
   }
 }
 
@@ -1657,6 +2158,11 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 @media (max-width: 460px) {
   #subscribe button {
+    margin-top: 10px;
+  }
+}
+@media (max-width: 460px) {
+  #footer button {
     margin-top: 10px;
   }
 }
