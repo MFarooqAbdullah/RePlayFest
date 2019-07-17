@@ -1278,7 +1278,11 @@ body.mobile-nav-active #mobile-nav-toggle {
   overflow: hidden;
   position: relative;
 }
-
+.contact-subscribe {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
 #subscribe:before {
   content: "";
   background: rgba(6, 12, 34, 0.6);
@@ -2032,7 +2036,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .overlay .closebtn {
   position: absolute;
-  top: -35px;
+  top: 30px;
   right: 45px;
   font-size: 60px;
 }
