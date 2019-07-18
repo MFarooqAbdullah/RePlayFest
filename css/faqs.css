@@ -1409,7 +1409,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #footer .footer-top {
   background: #040919;
-  padding: 60px 0 30px 0;
+  padding: 60px 100px 30px 0;
 }
 
 #footer .footer-top .footer-info {
@@ -1566,6 +1566,30 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size: 16px;
   cursor: pointer;
   margin: -6px 0px 0px 237px;
+}
+.Field {
+  display: flex;
+}
+
+.SearchBox-query {
+  /* Shrink and grow as needed, but never shrink so
+     small that we can't read the placeholder */
+  flex: 1 0 8em;
+}
+
+.SearchBox-submitBtn {
+  /* Never shrink or grow */
+  flex: 0 0 auto;
+  color: #fff;
+  border: 2px solid white;
+  background-color: #FF9461;
+}
+
+.Field--is-search:before {
+  /* Don't shrink or grow and use a default size */
+  flex: 0 0 2.75em;
+
+  /* ... */
 }
 /*--------------------------------------------------------------
 # Navbar 
@@ -1948,10 +1972,10 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
 }
 @media (min-width: 767px) {
-  #footer input {
+  /* #footer input {
     min-width: 200px;
     min-height: 50px;
-  }
+  } */
 }
 
 @media (min-width: 768px) {
@@ -2072,6 +2096,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 @media (max-width: 460px) {
   #footer button {
-    margin-top: 10px;
+    margin-top: 1px;
   }
 }
