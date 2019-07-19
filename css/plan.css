@@ -16,7 +16,7 @@ body {
 }
 
 a {
-  color: #eee;
+  color: #fff;
   transition: 0.5s;
 }
 
@@ -104,7 +104,7 @@ h6 {
 
 .section-header {
   margin-bottom: 60px;
-  /* position: relative; */
+  position: relative;
   padding-bottom: 20px;
 }
 
@@ -114,7 +114,7 @@ h6 {
   display: block;
   width: 60px;
   height: 5px;
-  /* background: #f82249; */
+  background: #f82249;
   bottom: 0;
   left: calc(50% - 25px);
 }
@@ -137,7 +137,7 @@ h6 {
 }
 
 .section-with-bg {
-  background-color: #f6f7fd;
+  background-color: #BF60F7;
 }
 
 /*--------------------------------------------------------------
@@ -157,7 +157,7 @@ h6 {
 
 #header.header-scrolled,
 #header.header-fixed {
-  background: #ffffff65;
+  background: #ffffffd5;
   height: 70px;
   padding: 15px 0;
   transition: all 0.5s;
@@ -472,27 +472,35 @@ body.mobile-nav-active #mobile-nav-toggle {
 #intro {
   width: 100%;
   height: 100vh;
+  /* position: absolute; */
+  left: auto;
   background: url(../img/intro-bg.jpg) top center;
   background-size: cover;
   overflow: hidden;
-  position: relative;
+  /* position: relative; */
 }
 
+.no-gutters {
+  margin-top: 150px;
+  margin-left: 0;
+}
 #intro:before {
   content: "";
-  background: rgba(6, 12, 34, 0.8);
+  background: #bf60f785;
   position: absolute;
   bottom: 0;
   top: 0;
   left: 0;
   right: 0;
+  height: 170vh;
+
 }
 
 #intro .intro-container {
   position: absolute;
   bottom: 0;
   left: 0;
-  top: 90px;
+  top: 0px;
   right: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -512,22 +520,29 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #intro h1 {
-  color: #fff;
+  color: #FF9461;
   font-family: "Raleway", sans-serif;
   font-size: 56px;
   font-weight: 600;
+  text-align: justify;
   text-transform: uppercase;
+  align-self: self-end;
+  margin: 55px 0px;
 }
 
 #intro h1 span {
   color: #f82249;
 }
-
 #intro p {
-  color: #ebebeb;
-  font-weight: 700;
-  font-size: 20px;
+  text-align: justify;
+  color: #FF9461;
+  /* font-weight: 700; */
+  font-size: 14px;
+  align-self: self-end;
+  margin: 0px 0px 0px 0px;
 }
+
+
 
 #intro .play-btn {
   width: 94px;
@@ -610,19 +625,19 @@ body.mobile-nav-active #mobile-nav-toggle {
   letter-spacing: 1px;
   display: inline-block;
   padding: 12px 32px;
-  border-radius: 50px;
   transition: 0.5s;
   line-height: 1;
-  margin: 10px;
-  color: #fff;
+  margin: 10px 80px;;
+  background: #FF9461;
+  color: #3A3F76;
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s;
-  border: 2px solid #f82249;
+  border: 2px solid #FF9461;
 }
 
 #intro .about-btn:hover {
-  background: #f82249;
-  color: #fff;
+  background: #FF9461;
+  color: #3A3F76;
 }
 
 @-webkit-keyframes pulsate-btn {
@@ -658,17 +673,17 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------------------------------------*/
 
 #about {
-  background: url("../img/about-bg.jpg");
+  background: url("../img/intro-bg.jpg");
   background-size: cover;
   overflow: hidden;
   position: relative;
   color: #fff;
-  padding: 60px 0 40px 0;
+  padding: 200px 0 0px 0;
 }
 
 #about:before {
   content: "";
-  background: rgba(13, 20, 41, 0.8);
+  background: rgba(192, 96, 247, 0.425);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -677,7 +692,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #about h2 {
-  font-size: 36px;
+  font-size: 50px;
   font-weight: bold;
   margin-bottom: 10px;
   color: #fff;
@@ -700,14 +715,56 @@ body.mobile-nav-active #mobile-nav-toggle {
 /*--------------------------------------------------------------
 # Speakers Section
 --------------------------------------------------------------*/
+#tickets {
+  padding: 100px 0 100px 0;
+  background-color: #FF9461
+}
+
+#tickets .speaker {
+  position: relative;
+  overflow: hidden;
+  margin-top: -150px;
+  margin-bottom: 30px;
+}
+
+#tickets .speaker .details {
+  background: rgba(6, 12, 34, 0.76);
+  position: absolute;
+  left: 0;
+  bottom: -30px;
+  right: 0;
+  text-align: center;
+  padding-top: 10px;
+  transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+#tickets .speaker .details h3 {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+#tickets .speaker .details p {
+  color: #fff;
+  font-size: 15px;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+/*--------------------------------------------------------------
+# Speakers Section
+--------------------------------------------------------------*/
 
 #speakers {
-  padding: 60px 0 30px 0;
+  padding: 60px 0 100px 0;
+  background-color: #BF60F7
 }
 
 #speakers .speaker {
   position: relative;
   overflow: hidden;
+  margin-top: -150px;
   margin-bottom: 30px;
 }
 
@@ -906,7 +963,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #venue .venue-map iframe {
   width: 100%;
-  height: 150%;
+  height: 100%;
   min-height: 300px;
 }
 
@@ -967,8 +1024,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #hotels .hotel {
-  border: 1px solid #e0e5fa;
-  background: #fff;
+  /* border: 1px solid #e0e5fa; */
+  /* background: #fff; */
   margin-bottom: 30px;
 }
 
@@ -979,7 +1036,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #hotels .hotel-img {
   overflow: hidden;
-  margin-bottom: 15px;
+  /* margin-bottom: 15px; */
 }
 
 #hotels .hotel-img img {
@@ -1069,12 +1126,12 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------------------------------------*/
 
 #supporters {
-  padding: 60px 0;
+  padding: 0px 0;
 }
 
 #supporters .supporters-wrap {
-  border-top: 1px solid #e0e5fa;
-  border-left: 1px solid #e0e5fa;
+  /* border-top: 1px solid #e0e5fa;
+  border-left: 1px solid #e0e5fa; */
   margin-bottom: 30px;
 }
 
@@ -1110,7 +1167,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------------------------------------*/
 
 #faq {
-  padding: 200px 0;
+  padding: 0px 0;
 }
 
 #faq #faq-list {
@@ -1127,12 +1184,10 @@ body.mobile-nav-active #mobile-nav-toggle {
   display: block;
   position: relative;
   font-family: "Raleway", sans-serif;
-  font-size: 24px;
+  font-size: 16px;
   line-height: 24px;
-  font-weight: 500;
+  font-weight: 600;
   padding-right: 20px;
-  color:#3A3F76;
-
 }
 
 #faq #faq-list i {
@@ -1151,11 +1206,11 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #faq #faq-list a.collapsed {
-  color: #3A3F76;
+  color: #000;
 }
 
 #faq #faq-list a.collapsed i::before {
-  content: "\f107" !important;
+  content: "\f055" !important;
 }
 
 /*--------------------------------------------------------------
@@ -1170,9 +1225,9 @@ body.mobile-nav-active #mobile-nav-toggle {
   position: relative;
 }
 .contact-subscribe {
-  margin: 0;
-  padding: 0;
-  position: relative;
+    margin: 0;
+    padding: 0;
+    position: relative;
 }
 #subscribe:before {
   content: "";
@@ -1223,7 +1278,19 @@ body.mobile-nav-active #mobile-nav-toggle {
 #buy-tickets {
   padding: 60px 0;
 }
-
+.card {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #FF9461;
+  background-clip: border-box;
+  border: 1px solid rgba(0,0,0,.125);
+  /* border-radius: .75rem; */
+}
 #buy-tickets .card {
   border: none;
   border-radius: 5px;
@@ -1240,15 +1307,16 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #buy-tickets .card .card-title {
-  margin: 10px 0;
-  font-size: 14px;
+  margin: 50px 0;
+  font-size: 16px;
+  font-style: unset;
   letter-spacing: 1px;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 
 #buy-tickets .card .card-price {
-  font-size: 48px;
-  margin: 0;
+  font-size: 30px;
+  margin: 35px;
 }
 
 #buy-tickets .card ul li {
@@ -1262,7 +1330,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #buy-tickets .card .btn {
   font-size: 15px;
   border-radius: 50px;
-  padding: 10px 40px;
+  padding: 10px 60px;
   transition: all 0.2s;
   background-color: #f82249;
   border: 0;
@@ -1893,7 +1961,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .btn-primary {
-    background: #35376E;
+    background: #FF9461;
     color: #3A3F76;
     margin: 0px 20px;
 }
@@ -2012,6 +2080,9 @@ body.mobile-nav-active #mobile-nav-toggle {
   #footer {
     background-attachment: fixed;
   }
+  #hotels {
+    margin-top: -150px;
+}
 }
 
 @media (max-width: 1199px) {
@@ -2022,11 +2093,14 @@ body.mobile-nav-active #mobile-nav-toggle {
   .nav-menu a {
     padding: 8px 4px;
   }
+  #hotels {
+    margin-top: -50px;
+}
 }
 
 @media (max-width: 991px) {
   #header {
-    background: rgba(6, 12, 34, 0.98);
+    background: #ffffffd5;
     height: 70px;
     padding: 15px 0;
     transition: all 0.5s;
@@ -2037,11 +2111,11 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
 
   #mobile-nav-toggle {
-    display: inline;
+    display: inline-block;
   }
 
   #intro .intro-container {
-    top: 70px;
+    top: 0px;
   }
 
   #intro h1 {
@@ -2054,6 +2128,12 @@ body.mobile-nav-active #mobile-nav-toggle {
 
   #schedule .nav-tabs a {
     padding: 8px 60px;
+  }
+  #venue .venue-info h1 {
+    font-size: 94px;
+    letter-spacing: 18px;
+    margin-left:-10px;
+
   }
 }
 
@@ -2075,11 +2155,22 @@ body.mobile-nav-active #mobile-nav-toggle {
   #schedule .nav-tabs a {
     padding: 8px 50px;
   }
+  #venue .venue-info h1 {
+    font-size: 94px;
+    letter-spacing: 18px;
+    margin-left:-10px;
+
+  }
 }
 
 @media (max-width: 574px) {
   #venue .venue-info h3 {
     font-size: 24px;
+  }
+  #venue .venue-info h1 {
+    font-size: 24px;
+    letter-spacing: 15px;
+
   }
 }
 
@@ -2096,6 +2187,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 @media (max-width: 460px) {
   #footer button {
-    margin-top: 1px;
+    margin-top: 11px;
   }
 }
