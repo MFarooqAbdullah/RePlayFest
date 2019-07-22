@@ -43,7 +43,7 @@ h6 {
   font-weight: 400;
   margin: 0 0 20px 0;
   padding: 0;
-  color: #0e1b4d;
+  color: #FF595E;
 }
 
 .main-page {
@@ -137,7 +137,7 @@ h6 {
 }
 
 .section-with-bg {
-  background-color: #BF60F7;
+  background-color: #3B2844;
 }
 
 /*--------------------------------------------------------------
@@ -758,7 +758,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #speakers {
   padding: 60px 0 100px 0;
-  background-color: #BF60F7
+  background-color: #3B2844
 }
 
 #speakers .speaker {
@@ -1286,7 +1286,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background-color: #FF9461;
+  background-color: #3B2844;
   background-clip: border-box;
   border: 1px solid rgba(0,0,0,.125);
   /* border-radius: .75rem; */
